@@ -1,0 +1,47 @@
+p, h3 {
+    color: darkgray;
+}
+
+.black_bg, .white {
+    color: white;
+    background-color: black;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red + .blue +div {
+    background-color: purple;
+}
+h1 + p {
+    color: darkgreen;
+}
+
+ol > li {
+    color: coral;
+}
+
+ol#chocolate > li {
+    color: chocolate;
+}
+
+ul li {
+    color: lime;
+}
+
+/* 리스트 중 두번째 애만 색 다르게 함. */
+ul li:nth-of-type(2) {
+    color: black;
+}
+
