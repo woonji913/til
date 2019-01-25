@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>영화추천사이트</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Nanum+Pen+Script&subset=korean');
+    @import url('https://fonts.googleapis.com/css?family=Jua&subset=korean');
+    body {
+        height: 10000px;
+    }
+   
+    .navbar {
+        font-family: 'Jua', sans-serif;
+    }
+    .section {
+            height:350px;
+            background: url('popcorn.jpg') no-repeat; /*한줄로*/
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+    
+    h2 {
+        line-height: 350px;
+        color: black;
+        font-family: 'Nanum Pen Script', cursive;
+        }
+    .page-footer {
+        display: flex;
+        height:50px;
+        background-color: darkblue;
+        color: white;
+        opacity: 0.7;
+        padding: 0px 3rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <a class="navbar-brand" href="#">영화추천시스템</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">친구 평점 보러가기</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Log In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="container-fluid">
+        <div class="section text-center" id="home">
+            <h2>당신에게 어울리는 영화를 추천해드립니다.</h2>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer fixed-bottom">
+        <a class="footer-copyright font-small text-start">© 2019 Jeong Woonji</a>
+        <a href="#home">
+            <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
+        </a>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
