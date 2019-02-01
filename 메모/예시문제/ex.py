@@ -25,7 +25,6 @@ class Circle:
 
 
 
-
 # 아래의 코드는 수정하지마세요. 
 p1 = Point(0, 0)
 c1 = Circle(p1, 3)
