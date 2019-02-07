@@ -7,4 +7,12 @@ CREATE TABLE movies (
 '누적관객수' INTEGER,
 '상영시간' INTEGER,
 '제작국가' TEXT,
-'장르' TEXT);
+'장르' TEXT
+);
+
+.mode csv
+.import boxoffice.csv movies
+.headers on
+.mode column
+
+SELECT * FROM movies;
