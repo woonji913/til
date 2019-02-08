@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <a href="/movies/new/"><h1>새 영화 등록</h1></a>
+    </div>
+    
+    <h2>영화목록</h2>
+    <ul>
+        {% for movie in movies %}
+            <li>
+                <a href="/movies/{{ movie.id }}/">{{ movie.title }}</a> / 평점: {{ movie.score }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
