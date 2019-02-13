@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}STUDENT{% endblock %}
+{% block body %}
+    {% if age == None %} 
+    <h2>없는 인간 입니다.</h2>
+    {% else %}
+    <h1>이름: {{ name }}</h1>
+    <h2>나이: {{ age }}</h2>
+    {% endif %}
+{% endblock %}

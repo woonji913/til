@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}INFO{% endblock %}
+{% block body %}
+    <h1>우리반 정보</h1>
+    <h2>Teacher</h2>
+    <ul><li>준호쌤</li></ul>
+    <h2>Student</h2>
+    {% for nam in name %}
+    <ul>
+        <li>{{nam}}</li>
+    </ul>
+    {% endfor %}
+{% endblock %}
