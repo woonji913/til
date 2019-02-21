@@ -1,0 +1,14 @@
+{% extends 'students/base.html' %}
+{% block body %}
+    <h1 class="d-flex justify-content-center">상세정보</h1>
+    <h2>{{ student.name }}</h2>
+    <hr>
+    <p>이름: {{ student.name }}</p>
+    <p>이메일: {{ student.email }}</p>
+    <p>생일: {{ student.birthday }}</p>
+    <p>나이: {{ student.age }}</p>
+    <a class="badge badge-primary" href="/students/">[뒤로가기]</span>
+    <a class="badge badge-warning" href="/students/{{ student.pk }}/edit/">[수정]</span>
+    <a href="/students/{{ student.pk }}/delete/" class="badge badge-danger" onclick="return confirm('진짜 지울거얌??')">[삭제]</a>
+    <hr>
+{% endblock %}

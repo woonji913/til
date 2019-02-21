@@ -1,0 +1,17 @@
+{% extends 'students/base.html' %}
+{% block title %}Index{% endblock %}
+{% block body %}
+    
+    <h1 class="d-flex justify-content-center">학생 정보 조회</h1>
+    <a type="button" class="btn btn-info" href="/students/new">학생 등록하기</a>
+    
+    <hr>
+    {% for student in students %}
+        <p>{{ student.name }}</p>
+        <p>{{ student.email }}</p>
+        <a class="badge badge-success" href="/students/{{ student.pk }}">[정보보기]</span>
+        <a class="badge badge-warning" href="/students/{{ student.pk }}/edit/">[수정]</span>
+        <a href="/students/{{ student.pk }}/delete/" class="badge badge-danger" onclick="return confirm('진짜 지울거얌??')">[삭제]</a>
+        <hr>
+    {% endfor %}
+{% endblock %}
