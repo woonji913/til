@@ -1,0 +1,22 @@
+{% extends 'movies/base.html' %} {% block title %}INDEX{% endblock %} {% block body %}
+<h1 class='bg-info'>영화 정보 조회</h1>
+<h2>{{ movie.id }}. {{movie.title }}</h2>
+<hr>
+<div class="card" style="width: 50%;">
+    <div class="card-body">
+        <h3>{{ movie.title }}</h3>
+        <hr>
+        <h6 class="card-subtitle mb-2 text-muted">누적 관객수: {{ movie.audience }}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">장르: {{ movie.genre }}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">평점: <span class="badge badge-pill badge-light">{{ movie.score }}</span></h6>
+        <hr>
+        <p>포스터 이미지 URL: <a href="{{ movie.poster_url }}" target='_blank'>{{ movie.poster_url }}</a></p>
+        <hr>
+        <p>영화 소개: {{ movie.description }}</p>
+        <hr>
+        <a href="/movies/">[목록]</a>
+        <a href="/movies/{{ movie.pk }}/edit/">[수정]</a>
+        <a href="/movies/{{ movie.pk }}/delete/">[삭제]</a>
+    </div>
+</div>
+{% endblock %}
