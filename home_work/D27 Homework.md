@@ -1,0 +1,28 @@
+# D27 Homework
+
+190409
+
+1. 로그인을 한 사용자만 게시물을 작성할 수 있도록 코드를 작성하려고 한다.
+   빨간 박스에 들어갈 코드를 작성하세요.
+
+![1554791071283](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1554791071283.png)
+
+```python
+from django.contrib.auth.decorators import login_required
+
+@login_required
+```
+
+2. Board 모델에 게시물을 작성한 사람을 저장할 칼럼을 추가하려고 한다.
+   이를 위해 필요한 모듈과 ForeignKey() 에 넣어야 할 인자를 작성하세요.
+
+![1554791153312](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1554791153312.png)
+
+```python
+from django.conf import settings
+```
+
+```python
+user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+```
+
